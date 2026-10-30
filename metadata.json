@@ -1,0 +1,6 @@
+{
+  "name": "Python Mastery - From Zero to Pro Landing Page",
+  "description": "High-converting landing page for Python Mastery eBook by Abhishek Prajapati. Features free sample PDF download, interactive reader, Razorpay payment integration (₹149), and post-transaction verification for instant complete eBook download.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@layer utilities {
+  @keyframes floatUp {
+    0%, 100% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-8px) rotate(2deg);
+    }
+  }
+
+  @keyframes floatDown {
+    0%, 100% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+      transform: translateY(8px) rotate(-2deg);
+    }
+  }
+
+  @keyframes pulseGlow {
+    0%, 100% {
+      box-shadow: 0 0 15px rgba(168, 85, 247, 0.4), 0 0 30px rgba(99, 102, 241, 0.2);
+    }
+    50% {
+      box-shadow: 0 0 25px rgba(236, 72, 153, 0.6), 0 0 50px rgba(168, 85, 247, 0.4);
+    }
+  }
+
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+
+  .animate-float {
+    animation: floatUp 4s ease-in-out infinite;
+  }
+
+  .animate-float-delayed {
+    animation: floatDown 5s ease-in-out infinite;
+  }
+
+  .animate-glow {
+    animation: pulseGlow 3s ease-in-out infinite;
+  }
+
+  .animate-shimmer {
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.08) 50%, rgba(255,255,255,0) 100%);
+    background-size: 200% 100%;
+    animation: shimmer 3s infinite;
+  }
+}
